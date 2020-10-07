@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Table</title>
+</head>
+<body>
+  <button id="onlyActive">isActive: true</button>
+  <button id="onlyNoActive">isActive: false</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Open child</th>
+        <th>Parent ID</th>
+        <th>Child ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Balance</th>
+        <th>IsActive</th>
+      </tr>
+    </thead>
+    <tbody id="root">
+
+    </tbody>
+  </table>
+  <script src="./script.js"></script>
+  <style>
+    .child {
+      visibility: collapse;
+    }
+    .child.opened {
+      visibility: visible;
+    }
+    .isActiveTrueClosed {
+      visibility: collapse !important;
+    }
+    .isActiveFalseClosed {
+      visibility: collapse !important;
+    }
+  </style>
+</body>
+</html>
